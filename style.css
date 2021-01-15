@@ -1,0 +1,227 @@
+body {
+  margin: 0px;
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+/*to change the text color of hover*/
+li a:hover {
+  background-color: #111;
+}
+div {
+  text-align: center;
+  padding: 0px;
+  background-color: transparent;
+}
+.homie {
+  text-align: center;
+  padding: 14px;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #808080;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.sub {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #808080;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover{
+  background-color: red;
+}
+
+.sub:hover{
+  background-color: green;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a {
+  color: white;
+  font-family: fantasy;
+}
+
+ .points{
+  color: white;
+  font-size: 3em;
+  font-family: fantasy;
+ }
+.category_buttons{
+  display: flex;
+  background-color: black; 
+  border-left: 6px solid red;
+}
+.category_buttons div {
+  margin: 3px;
+  padding: 20px;
+  font-size: 30px;
+  width: 100vw;
+}
+.count_buttons{
+  display: flex;
+  background-color: transparent;
+}
+.count_buttons div{
+  margin: 3px;
+  padding: 20px;
+  width: 100vw;
+}
+.ques_div {
+  text-align: center;
+  padding: 50px;
+  background-color: transparent;
+}
+h1 {
+  color: white;
+}
+.prev_next{
+  display: flex;
+  background-color: transparent;
+}
+.prev_next div{
+  margin: 3px;
+  padding: 20px;
+  width: 100vw;
+}
+.nxt:hover{
+  background-color: green;
+}
+.input{
+  border: 2px solid var(--input-border);
+  border-style: round;
+  width: 400px;
+  height: 60px;
+  border-radius: 7px;
+  border-color: red; 
+  background-color: white;
+  text-align: center;
+  font-family: fantasy;
+  }
+
+  .cat1{
+    background-color: green;
+  }
+  .cat2{
+    background-color: teal;
+  }
+  .cat3{
+    background-color: brown;
+  }
+  .cat4{
+    background-color: pink;
+  }
+  .cat5{
+    background-color: purple;
+  }
+
+  /*taken from web dev simplified*/
+  .end-screen{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: red;
+    font-family: fantasy;
+  }
+  .end-screen.visible{
+   display: flex;
+   animation: grow 500ms forwards;
+  }
+
+  @keyframes grow{
+    from{
+      background-color: rgba(0,0,0,0);
+      font-size: 0;
+    }
+    to{
+        background-color: rgba(0,0,0,.8);
+        font-size: 5em;
+    }
+  }
+  .home_body{
+    background-image: url(images/chag.jpg);
+    background-size: 1950px 1000px;
+    background-repeat: no-repeat;
+  }
+  .ques_div{
+    background-image: url(images/gameboard.jpg);
+  }

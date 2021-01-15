@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trini Ting</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="web icon" type="image/png/ico" href="images/flag.png">
+	<!--navigation bar -->
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="trivia.html">PLAY NOW</a></li>
+		</ul>
+</head>
+
+<div id="overlay" class="end-screen" onclick="resetboard()">
+	Game Over
+</div>
+<div id="overlay2" class="end-screen" onclick="off()">
+	Sweet streak!
+</div>
+<div id="overlay4" class="end-screen" onclick="off()">
+	WARNING!<br> You now have 2 wrong <br> 3 in a row and you're out :(!
+</div>
+
+<div id ="getName" class="end-screen">
+    <form name="myPrompt">
+        <label for="name">Please Enter Your Name</label><br>
+        <input type="text" name="name" id="usr" class="input" required><br>
+        <input  id="submitPrompt" value="Submit" class="sub">
+    </form>
+</div>
+
+<body>
+		<div class="category_buttons">
+ 			<div><button class="cat1" id='category1' onclick="food()">FOOD</button></div>
+ 			<div><button class="cat2" id='category2' onclick="celeb()">CELEBRITIES</button></div>
+ 			<div><button class="cat3" id='category3' onclick="geo()">GEOGRAPHY</button></div>
+ 			<div><button class="cat4" id='category4' onclick="festive()">CELEBRATIONS</button></div>
+ 			<div><button class="cat5" id='category5' onclick="politics()">POLITICS</button></div>
+ 		</div>
+
+ 		<div class="count_buttons">
+ 			<div><button id='reset_button' onclick="resetboard()">RESET</button></div>
+			<div class="points">Score: <span id="score">0</span></div>
+			<div class="points">Question: <span id="qcount">0</span> of 5</div>
+ 			<div><button id='stop_button' onclick="stop_game()">QUIT</button></div>
+ 		</div>
+
+ 		<div class="ques_div">
+ 			<h1 id="questions">SELECT CATEGORY ABOVE TO START TRINI TING </h1>
+ 		</div>
+
+ 		<div class="prev_next">
+ 			<!-- <div><button id='prev' onclick="">PREV</button></div> -->
+			<div class="textfield">
+					
+						<input class="input" id="ans" placeholder="TYPE YOUR ANSWER HERE">
+				
+			</div>
+ 			<div><button id='next' class="nxt" onclick="">NEXT</button></div>
+ 		</div>
+
+<script src="myjs.js"></script>	
+</body>
+</html>
